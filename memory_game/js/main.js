@@ -10,6 +10,7 @@ var checkForMatch = function(){
 };
 
 var flipCard = function(cardId){
+	cardsInPlay.push(cards[cardId]);
 	if (cardsInPlay.length === 2 && cardsInPlay[0] === cardsInPlay[1]) {
 	alert("You found a match!");
 } else {
